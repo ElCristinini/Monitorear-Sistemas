@@ -1,0 +1,123 @@
+Tarea N*1 
+
+Realizado por: Andres Badillo 
+
+Para realizar la tarea numero 1 debemos seguir los siguientes pasos 
+
+Paso nº1: Descargar el sistema operativo de ubuntu linux  version 20.04.6 (para emplear los comandos a futuro) instalarlo en su computador y seguir los paso a paso previos que le pide, recuerde que para instalarlo debe colocarlo como opcion 2 de arranque para que pueda seleccionar que sistema operativo le gustaria si el que a usado previamente o el actual. 
+
+ 
+
+Paso 2 
+
+Debera descargar las iso propuestas por el docente en instarlas, a continuacion se le dira por que links descargar y cuales 
+
+Iso windows: 
+
+https://www.microsoft.com/es-es/software-download/windows10iso 
+
+Puede descargar cualquier de la iso 10 u 11 ya que estas las puede usar sin necesidad de llave de activación  
+
+ 
+
+Iso Centos: 
+
+https://www.centos.org/download/ 
+
+ 
+
+Se recomienda descargar la x86_64  donde dice “ISOs” 
+
+Debera descargarlas y  
+
+ 
+
+Paso 3 
+
+Una vez seguido los pasos anteriores ahora ejecutara la siguiente lista de comandos para activar su maquina virtual   
+
+Comando para 
+
+Egrep –c ‘(vmx|svm)’ /proc/cpuinfo 
+
+Este codigo es el encargado de decier si el procesador de su computadores capaz de aguantar las maquinas virtuales 
+
+Kvm-ok 
+
+Codigo encargado de instalarte el administrador de las maquinas virtuales 
+
+Sudo apt install qemu-kvm virt-manager virtinst libvirt-clients bridge-utils libvirt-daemon-system  
+
+Este codigo le dira si quedo bien instalado el proceso de descarga de la maquina virtual(si no le aparece nada ok, si si vuelva al paso anterior) 
+
+Sudo systemctl enable --now libvirtd 
+
+Este codigo iniciara la maquina virtual 
+
+Sudo systemctl start libvirtd 
+
+Este codigo sera el encargado de mostrarle el estado de su maquina virtual(le debera aparecer en verde ) 
+
+Sudo sistemctl status libvirtd 
+
+Este codigo hara el pre arranque de su maquina virtual 
+
+Sudo usermod –aG kvm $USER 
+
+Sudo usermod –aG libvirt $USER 
+
+Si siguio los pasos anteriores felicidades! Ahora podra arrancar y ver la interfaz grafica del administrador de maquinas virtuales en el cual manejara las mismas  
+
+Sudo virt-manage 
+
+  
+
+En este paso debera darle a la pantalla con un destello en la parte superior izquierda que aparece en la imagen  una vez seleccionada le aparecera el cuadro presentado, elegira la opcion de “medio de instalacion local” luego “adelante” 
+
+Ahora selecciona la opcion ”explorar” y buscar el lugar en el cual guardo sus Isos y selecciona la que quiere instalar, una vez seleccionado en la parte inferior debe desmarcar la opcion ”Deteccion automatica” y escribir la iso que instalo tipo ”Centos” la selecciona y sigue adelante si no le aparece debera darle a ”Generic modle ”  
+
+ 
+
+En estos próximos pasos debe asignar los espacios de su disco, el rendimiento y demas, una vez concluidos junto al nombre que desea colocarle a su maquina virtual, Felicidades!!! A creado una maquina virtual 
+
+ 
+
+Paso 4 
+
+Debera seleccionar cualquier de las dos maquinas virtuales y ejecutar los siguientes codigos para empezar a mapear la red y la automatización 
+
+ 
+
+Instalamos el nmap en nuestra maquinas virtualel con el siguiente codigo en linux :” sudo yum install nmap –y” con el fin de mapear las redes y de en windows por el instalador normal desde cualquier navegador 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Una vez instalado ejecutamos este codigo “nmap -sP 192.168.10.18” para detectar dispositivos en la red interna (la ip cambia dependiendo a su ordenador) .Despues escribiremos en CEntos el siguiente comando para asignar las tareas que usted quiere hacer y dejar automatizadas “crontab -e”   
+
+ 
+
+Se abrira la siguiente pestaña parece un editor de notas en el cual va a colocar las tareas mencionadas por ejemplo nosotros colocamos 3 la primera es la encargada de mapear cada 10 minutos quien esta conectado en la red y que los guarde en el archivo llamado “archivoescanea”, la 2 es encargada de actualizar el sistema a las 3 am todos los dias y la 3era es apagar a las 11:30PM la maquina virtual siempre. Una vez asignadas sus tareas le dara a la tecla “esc” despues “:wq+ enter” y automáticamente quedan guardadas sus tareas previas, para revisar las tareas que hayan quedado existentes coloca el codigo “crontab -l”. 
+
+ 
+
+Ahora para realizar las tareas en Windows debemos ejecutar “win+r” y escribimos  “taskschd.msc” nos ubicamos donde nos dice crear tarea basica le colocamos un nombre una descripción previa y ya 
+
+ 
+
+Ahora proseguimos con todos los paso a pasos como seleccionar los momentos del dia a realizar la tarea, la acción y eso es todo haz lo mismo para las tareas que quieras y ya bendiciones cualquier cosa al dm un apoyo jeje  
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
