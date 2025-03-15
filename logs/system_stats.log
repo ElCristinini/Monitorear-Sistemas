@@ -12,3 +12,31 @@ Uso de disco: 33%
 Interfaz de red: lo 127.0.0.1/8
 enp1s0 192.168.122.36/24
 -----------------------------------
+== MONITOR DE RECURSOS - sáb 15 mar 2025 08:25:48 -05 ==
+CPU: 46%
+Memoria libre: 132 MB
+Uso de disco: 34%
+Interfaz de red: lo 127.0.0.1/8
+enp1s0 192.168.122.36/24
+-----------------------------------
+== MONITOR DE RECURSOS - sáb 15 mar 2025 08:28:13 -05 ==
+CPU: 8%
+Memoria libre: 772 MB
+Uso de disco: 34%
+Interfaz de red: lo 127.0.0.1/8
+enp1s0 192.168.122.36/24
+-----------------------------------
+== MONITOR DE RECURSOS - sáb 15 mar 2025 08:31:44 -05 ==
+CPU: 24%
+Memoria libre: 643 MB
+Uso de disco: 34%
+Interfaz de red: lo 127.0.0.1/8
+enp1s0 192.168.122.36/24
+-----------------------------------
+== MONITOR DE RECURSOS - sáb 15 mar 2025 08:32:40 -05 ==
+CPU: 37%
+Memoria libre: 645 MB
+Uso de disco: 34%
+Interfaz de red: lo 127.0.0.1/8
+enp1s0 192.168.122.36/24
+-----------------------------------
