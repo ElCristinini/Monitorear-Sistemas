@@ -20,7 +20,6 @@
 
 2. Dar permisos de ejecución:  
    bash
-   
    ![Proyecto1](https://github.com/user-attachments/assets/eba036d7-dc85-4c9e-9f79-19d2d99730f8)
 
 ---
@@ -57,12 +56,10 @@
 Programar ejecución del monitor cada hora:  
 1. Editar crontab:  
    bash
-   crontab -e
      ![Captura desde 2025-03-17 19-47-18](https://github.com/user-attachments/assets/fbbb9798-f133-4d2b-82d3-f30a9a9f3352)
 
 2. Añadir esta línea:  
    bash
-   0 * * * * /home/cristianolarte/monitorear-sistemas/resource_monitor.sh
      ![Captura desde 2025-03-17 19-47-51](https://github.com/user-attachments/assets/abb97910-2406-4b21-acf5-9bacd9ed026d)
 
 
