@@ -66,11 +66,11 @@ Programar ejecución del monitor cada hora:
 ---
 3. 👥 Trabajo Colaborativo con Git y GitHub
 
-    Clonar el Repositorio:![Captura desde 2025-03-17 19-50-16](https://github.com/user-attachments/assets/d2e0daf5-2b5b-49c3-855e-83cf6125d960)
+   Clonar el Repositorio:
+   ![Captura desde 2025-03-17 19-50-16](https://github.com/user-attachments/assets/d2e0daf5-2b5b-49c3-855e-83cf6125d960)
 
 Crear Ramas para cada Funcionalidad:
 
-git checkout -b nombre_funcionalidad
 ![Captura desde 2025-03-17 19-51-40](https://github.com/user-attachments/assets/fc4e74e9-236c-4c44-897e-a645a2bc8f76)
 
 Realizar Commits Descriptivos:
