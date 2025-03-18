@@ -47,7 +47,6 @@
 - *Propósito*: Busca errores en /var/log/messages.  
 - *Ejecución*:  
   bash
-  sudo ./log_analyzer.sh
   ![Captura desde 2025-03-17 19-46-29](https://github.com/user-attachments/assets/779520e0-9e12-475d-a63b-85fec43f2041)
 
 - *Salida*: error_logs.txt.  
@@ -70,8 +69,7 @@ Programar ejecución del monitor cada hora:
 ---
 3. 👥 Trabajo Colaborativo con Git y GitHub
 
-    Clonar el Repositorio:
-![Captura desde 2025-03-17 19-50-16](https://github.com/user-attachments/assets/d2e0daf5-2b5b-49c3-855e-83cf6125d960)
+    Clonar el Repositorio:![Captura desde 2025-03-17 19-50-16](https://github.com/user-attachments/assets/d2e0daf5-2b5b-49c3-855e-83cf6125d960)
 
 Crear Ramas para cada Funcionalidad:
 
