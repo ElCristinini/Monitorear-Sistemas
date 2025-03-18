@@ -9,6 +9,8 @@
   bash
   sudo dnf install git tar awk grep -y
   
+  
+  
 - *Permisos*: Ejecución de scripts (chmod +x).  
 
 ---
@@ -22,8 +24,8 @@
 
 2. Dar permisos de ejecución:  
    bash
-   chmod +x resource_monitor.sh backup_manager.sh log_analyzer.sh
    
+   ![Proyecto1](https://github.com/user-attachments/assets/eba036d7-dc85-4c9e-9f79-19d2d99730f8)
 
 ---
 
@@ -32,16 +34,17 @@
 - *Propósito*: Monitorea CPU, RAM, disco y red.  
 - *Ejecución*:  
   bash
-  ./resource_monitor.sh
   
+  ![Proyecto 1 1](https://github.com/user-attachments/assets/9b87374f-aa0e-4861-815d-b1ee3246e5b9)
+
 - *Logs generados*: logs/system_stats.log.  
 
 ### *2. Backup Automatizado (backup_manager.sh)*  
 - *Propósito*: Crea backups del directorio /home/cristianolarte/documentos.  
 - *Ejecución*:  
   bash
-  ./backup_manager.sh
-  
+  ![Captura desde 2025-03-17 19-44-22](https://github.com/user-attachments/assets/f3b5dfb6-3dc9-40e7-a2d9-10744e544da2)
+
 - *Backups generados*: backups/backup_AAAA-MM-DD.tar.gz.  
 
 ### *3. Analizador de Logs (log_analyzer.sh)*  
